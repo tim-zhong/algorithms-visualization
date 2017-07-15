@@ -20,7 +20,7 @@ function init() {
 
 	var x = d3.scaleLinear()
 	    .domain([d3.min(data, function(d) {return d.start;}), d3.max(data, function(d) {return d.end;})])
-		.range([0, width]);
+		.range([10, width]);
 
 	var y = d3.scaleLinear()
 	    .domain([0, JOBS])
