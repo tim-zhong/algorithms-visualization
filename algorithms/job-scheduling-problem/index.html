@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+   		<meta charset='utf-8'>
+   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1" >
+   	</head>
+   	<body>
+   		<style>
+   			line{
+   				stroke: #000000;
+   			}
+   			.key{
+   				font-style: italic;
+   			}
+   			#viz{
+   				border:1px solid #dedede;
+   			}
+   			text{
+   				font-size:10px;
+   			}
+   			text.selected{
+   				fill:#ff8500;
+   			}
+   			line.selected{
+   				stroke:#ff8500;	
+   			}
+   		</style>
+   		<h1>Job Scheduling Problem</h1>
+   		<div id="discription">
+   			<table>
+   				<tr>
+   					<td class="key">Input:</td>
+   					<td>A set I of n intervals on the line.</td>
+   				</tr>
+   				<tr>
+   					<td class="key">Output:</td>
+   					<td>What is the largest subset of mutually non-overlapping intervals which can be selected from I?</td>
+   				</tr>
+   			</table>
+   		</div>
+   		<div id="viz-container"></div>
+   		<div id="operations">
+   			<button id="reset">Reset</button>
+   			<br>
+   			<label for="jobs">Number of jobs:</label>
+   			<input id="jobs" type="number" min="1" max="30">
+   		</div>
+   		<script src="https://d3js.org/d3.v4.js"></script>
+   		<script src="viz.js"></script>
+   	</body>
+</html>
