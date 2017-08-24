@@ -1,8 +1,10 @@
 var JOBS = 20;
-	MIN_DURATION = 4;
-	MAX_DURATION = 10;
+	
 
 function init() {
+	var MIN_DURATION = 4;
+		MAX_DURATION = Math.floor(JOBS / 2);
+
 	d3.select('#viz').remove();
 
 	var data = generateData(JOBS, MIN_DURATION, MAX_DURATION);
